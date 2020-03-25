@@ -163,7 +163,7 @@ public class ComputePlanAction extends TriggerActionBase {
     }
   }
 
-  private void releasePolicySession(PolicyHelper.SessionWrapper sessionWrapper, Policy.Session session) {
+  protected void releasePolicySession(PolicyHelper.SessionWrapper sessionWrapper, Policy.Session session) {
     sessionWrapper.returnSession(session);
     sessionWrapper.release();
 
